@@ -305,7 +305,7 @@ Navigate to the website http://10.129.197.200/admin.php and try to logon using i
 
 Also review debug console -> Network -> Request and look at the form data, it contains username / password variable.  These will get used in Hydra
 
-![[Pasted image 20220928135523.png]]
+![testimage](image1.png)
 
 Used username list from here:
 https://github.com/danielmiessler/SecLists/tree/master/Usernames
